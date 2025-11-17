@@ -1,0 +1,30 @@
+name: API Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install flask pytest requests
+
+      - name: Start API
+        run: |
+          python api/app.py &
+          sleep 3
+
+      - name: Run tests
+        run: pytest -v
