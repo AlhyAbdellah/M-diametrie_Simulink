@@ -25,6 +25,11 @@ jobs:
         run: |
           python api/app.py &
           sleep 3
+      
+      - name: Debug - List repository
+        run: |
+          ls -R .
+
 
       - name: Run tests
         run: pytest -v
