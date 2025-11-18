@@ -4,7 +4,7 @@ from datetime import datetime
 import random
 
 app = Flask(__name__)
-DB_PATH = "Data/audience.db"
+DB_PATH = "data/audience.db"
 
 #  exécuter une requête SQL ---
 def run_query(query, params=(), fetch=False):
