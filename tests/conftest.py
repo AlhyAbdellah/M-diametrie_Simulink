@@ -1,5 +1,3 @@
-#version "conftest.py"#
-
 import pytest, json, requests
 
 BASE_URL = "http://127.0.0.1:5002"

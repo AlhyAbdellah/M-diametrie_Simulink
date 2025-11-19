@@ -1,0 +1,5 @@
+[
+  { "device_id": "device_001", "type": "tv_box", "user": "Abdellah" },
+  { "device_id": "device_002", "type": "smartphone", "user": "Yassine" },
+  { "device_id": "device_003", "type": "tablet", "user": "Karim" }
+]

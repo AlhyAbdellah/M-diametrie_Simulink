@@ -1,0 +1,5 @@
+[
+  { "device_id": "", "screen_time": 30.5, "volume": 70 },
+  { "device_id": "device_002", "screen_time": -12, "volume": 60 },
+  { "device_id": "device_003", "screen_time": 20, "volume": 500 }
+]
